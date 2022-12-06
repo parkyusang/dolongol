@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 공유시의 표시 내용 -->
+    <meta property="og:title" content="도롱골농원 링크 모음!"> <!-- 표시 타이틀 -->
+    <meta property="og:description" content="청도에서 직접 키운 약도라지"> <!-- 표시 본문 -->
+    <meta property="og:image" content="IMG_1686.jpg"> <!-- 표시 이미지 링크 -->
+    <title>도롱골농원</title></head>
+<body>
+    <div id="map" style="width:500px;height:400px;"></div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=72990147c45d72bf2c393d144d7a515a"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+</body>
+</html>
